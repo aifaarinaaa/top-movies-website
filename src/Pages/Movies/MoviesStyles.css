@@ -1,0 +1,19 @@
+*{
+    scroll-behavior: smooth;
+}
+.movies-container{
+    display: flex;
+    flex-direction: column;
+    
+    /* flex-wrap: wrap; */
+    /* justify-content: space-around; */
+
+}
+
+.movies-grid{
+margin-top:10%;
+margin-bottom:10%;
+display: flex;
+flex-wrap: wrap;
+justify-content: space-around;
+}

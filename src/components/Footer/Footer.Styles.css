@@ -1,0 +1,17 @@
+
+.footer-container{
+ padding: 30px;
+ box-shadow: 2px;
+ background-color: transparent;
+ position: relative;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   text-align: center;
+   z-index: 1;
+}
+
+h1{
+font-style: roboto;
+font-size: medium;
+}
