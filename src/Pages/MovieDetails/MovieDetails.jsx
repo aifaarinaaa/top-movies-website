@@ -86,14 +86,14 @@ const Movie = () => {
               </div>
             </div>
             <div className="movie__detailRightBottom">
-              <div className="synopsisText">Synopsis</div>
+              <div className="synopsisText">Overview</div>
               <div>{currentMovieDetail ? currentMovieDetail.overview : ""}</div>
             </div>
             <CastList />
           </div>
         </div>
         <div className="movie__links">
-          <div className="movie__heading">Useful Links</div>
+          <h1 className="movie__heading">Related Links</h1>
           {currentMovieDetail && currentMovieDetail.homepage && (
             <a
               href={currentMovieDetail.homepage}
@@ -101,11 +101,9 @@ const Movie = () => {
               rel="noreferrer"
               style={{ textDecoration: "none" }}
             >
-              <p>
-                <span className="movie__homeButton movie__Button">
-                  Homepage <i className="newTab fas fa-external-link-alt"></i>
-                </span>
-              </p>
+              <span className="movie__homeButton movie__Button">
+                Homepage <i className="newTab fas fa-external-link-alt"></i>
+              </span>
             </a>
           )}
           {currentMovieDetail && currentMovieDetail.imdb_id && (
@@ -115,11 +113,9 @@ const Movie = () => {
               rel="noreferrer"
               style={{ textDecoration: "none" }}
             >
-              <p>
-                <span className="movie__imdbButton movie__Button">
-                  IMDb<i className="newTab fas fa-external-link-alt"></i>
-                </span>
-              </p>
+              <span className="movie__imdbButton movie__Button">
+                IMDb<i className="newTab fas fa-external-link-alt"></i>
+              </span>
             </a>
           )}
         </div>

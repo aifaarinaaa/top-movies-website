@@ -1,5 +1,5 @@
 import React from "react";
-import { CardContent, CardActions } from "@material-ui/core";
+import { CardContent } from "@material-ui/core";
 import Box from "@mui/material/Box";
 import Card from "@mui/material/Card";
 import CardMedia from "@mui/material/CardMedia";
@@ -74,13 +74,13 @@ const Movies = () => {
                 justifyContent="center"
               >
                 {content.map((c) => (
-                  <Link
-                    style={{ textDecoration: "none", color: "white" }}
-                    to={`/moviedetails/${c.id}`}
+                  <Card
+                    sx={{ width: 200, height: 350, mx: 5, my: 3 }}
+                    onClick={handleOpen}
                   >
-                    <Card
-                      sx={{ width: 200, height: 350, mx: 5, my: 3 }}
-                      onClick={handleOpen}
+                    <Link
+                      style={{ textDecoration: "none", color: "white" }}
+                      to={`/moviedetails/${c.id}`}
                     >
                       <CardMedia
                         component="img"
@@ -101,10 +101,9 @@ const Movies = () => {
                         >
                           {c.title}
                         </Typography>
-                        <CardActions></CardActions>
                       </CardContent>
-                    </Card>
-                  </Link>
+                    </Link>
+                  </Card>
                 ))}
               </Grid2>
             </Box>
